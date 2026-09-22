@@ -1,7 +1,7 @@
 # Biblical Hebrew Accusative Data
 
-A searchable database of 1,609 constituents in the
-Pentateuch (Genesis–Deuteronomy), compiled by Jacques E. J. Boulet. It is the
+A searchable dataset of 1,609 constituents in the
+Pentateuch (Genesis–Deuteronomy) with analysis, compiled by Jacques E. J. Boulet. It is the
 digital database accompanying *Accusative Noun Phrases in Biblical Hebrew:
 Arguments, Modifiers, and Secondary Predicates* (Ancient Near Eastern
 Monographs; SBL Press).
