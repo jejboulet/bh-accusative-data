@@ -5,9 +5,10 @@ title: "Biblical Hebrew Accusative Data"
 abstract: >-
   A searchable dataset of 1,609 accusative-marked constituents in the
   Pentateuch (Genesis–Deuteronomy), with Hebrew text, transliteration,
-  glosses, translations, word alignments, and notes. Data appendix to
-  "Accusative Noun Phrases in Biblical Hebrew: Arguments, Modifiers, and
-  Secondary Predicates."
+  glosses, translations, word alignments, and notes. The digital database
+  accompanying "Accusative Noun Phrases in Biblical Hebrew: Arguments,
+  Modifiers, and Secondary Predicates" (Ancient Near Eastern Monographs;
+  SBL Press).
 authors:
   - family-names: Boulet
     given-names: "Jacques E. J."
@@ -27,3 +28,6 @@ references:
     authors:
       - family-names: Boulet
         given-names: "Jacques E. J."
+    collection-title: "Ancient Near Eastern Monographs"
+    publisher:
+      name: "SBL Press"

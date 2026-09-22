@@ -2,8 +2,9 @@
 
 A searchable dataset of 1,609 accusative-marked constituents in the
 Pentateuch (Genesis–Deuteronomy), compiled by Jacques E. J. Boulet. It is the
-data appendix to *Accusative Noun Phrases in Biblical Hebrew: Arguments,
-Modifiers, and Secondary Predicates*.
+digital database accompanying *Accusative Noun Phrases in Biblical Hebrew:
+Arguments, Modifiers, and Secondary Predicates* (Ancient Near Eastern
+Monographs; SBL Press).
 
 **Browse the data:** https://jejboulet.github.io/bh-accusative-data/
 
