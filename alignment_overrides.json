@@ -1,0 +1,20 @@
+{
+  "generated": "2026-09-04T19:23:21.000Z",
+  "entries": {
+    "Gen 41:45|clause": {
+      "grouping": {
+        "heb": [1, 1, 2, 1, 1, 1],
+        "translit": [1, 1, 2, 1, 1, 1],
+        "gloss": [1, 1, 1, 1, 1, 1]
+      },
+      "src_counts": [7, 7, 6],
+      "groups": {
+        "heb": ["וַיִּתֶּן־ל֣וֹ", "אֶת־אָֽסְנַ֗ת", "בַּת־פּ֥וֹטִי פֶ֛רַע", "כֹּהֵ֥ן", "אֹ֖ן", "לְאִשָּׁ֑ה"],
+        "translit": ["wayyitten-lô", "ʾet-ʾāsənat", "bat-pôṭî peraʿ", "kōhēn", "ʾōn", "ləʾiššâ"],
+        "gloss": ["and-gave.3msg=to-him", "DOM=Asenath", "daughter.of=Potiphera", "priest.of", "On", "to-wife"]
+      },
+      "status": "ok_as_is",
+      "note": "Potiphera corresponds to two Hebrew words, פּ֥וֹטִי and פֶ֛רַע, which the English convention renders as one name -- grouped for display rather than fixed at source, since the Hebrew genuinely has two words here."
+    }
+  }
+}

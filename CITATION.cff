@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Biblical Hebrew Accusative Data"
+abstract: >-
+  A searchable dataset of 1,609 accusative-marked constituents in the
+  Pentateuch (Genesis–Deuteronomy), with Hebrew text, transliteration,
+  glosses, translations, word alignments, and notes. Data appendix to
+  "Accusative Noun Phrases in Biblical Hebrew: Arguments, Modifiers, and
+  Secondary Predicates."
+authors:
+  - family-names: Boulet
+    given-names: "Jacques E. J."
+version: "1.0.0"
+license: CC-BY-4.0
+repository-code: "https://github.com/jejboulet/bh-accusative-data"
+url: "https://jejboulet.github.io/bh-accusative-data/"
+keywords:
+  - Biblical Hebrew
+  - accusative
+  - Pentateuch
+  - syntax
+  - Hebrew Bible
+references:
+  - type: book
+    title: "Accusative Noun Phrases in Biblical Hebrew: Arguments, Modifiers, and Secondary Predicates"
+    authors:
+      - family-names: Boulet
+        given-names: "Jacques E. J."

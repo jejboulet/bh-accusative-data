@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblical Hebrew Accusative Data</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Biblical Hebrew Accusative Data</h1>
+  <p class="subtitle">A searchable dataset of accusative-marked constituents in the Pentateuch, compiled by Jacques E. J. Boulet (PhD dissertation, 2019).</p>
+</header>
+
+<main>
+  <section class="controls">
+    <div class="search-row">
+      <input id="searchBox" type="text" placeholder="Search Hebrew, transliteration, gloss, translation, notes…" autocomplete="off">
+      <span id="resultCount" class="result-count"></span>
+      <div class="col-picker">
+        <button id="columnsBtn" type="button" aria-haspopup="true" aria-expanded="false">Columns ▾</button>
+        <div id="columnsPanel" class="columns-panel" hidden>
+          <div id="columnsList" class="columns-list"></div>
+          <div class="columns-panel-actions">
+            <button id="resetColumnsBtn" type="button">Reset to default</button>
+          </div>
+        </div>
+      </div>
+      <button id="clearBtn" type="button">Clear filters</button>
+    </div>
+    <div id="filters" class="filters"></div>
+  </section>
+
+  <p class="table-hint">Click any row to see the full record, word-aligned with the Hebrew.</p>
+
+  <section class="table-wrap">
+    <table id="dataTable">
+      <thead>
+        <tr id="headerRow"></tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <p id="emptyMsg" class="empty-msg" hidden>No matching rows.</p>
+  </section>
+</main>
+
+<div id="detailOverlay" class="overlay" hidden>
+  <div class="detail-panel">
+    <button id="closeDetail" class="close-btn" aria-label="Close">&times;</button>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<footer>
+  <p>Data: Boulet, Jacques E. J. (2019). PhD dissertation datatables. 1,609 entries, Genesis&ndash;Deuteronomy.</p>
+  <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
