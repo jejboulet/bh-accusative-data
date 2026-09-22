@@ -71,6 +71,7 @@ main {
 
 .search-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.6rem;
@@ -393,4 +394,14 @@ footer {
   font-style: italic;
   color: var(--text-dim);
   white-space: normal;
+}
+
+@media (max-width: 600px) {
+  header { padding: 1rem 1rem 0.75rem; }
+  main { padding: 0.5rem 1rem 1.5rem; }
+  footer { padding: 1.5rem 1rem 2rem; }
+  #searchBox { flex-basis: 100%; min-width: 0; }
+  .search-row { position: relative; }
+  .col-picker { position: static; }
+  .columns-panel { left: 0; right: auto; max-width: 100%; box-sizing: border-box; }
 }
