@@ -16,8 +16,14 @@ Monographs; SBL Press).
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff), or use "Cite this repository" on GitHub.
-Archived versions carry a DOI on Zenodo.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22903206.svg)](https://doi.org/10.5281/zenodo.22903206)
+
+Boulet, Jacques E. J. *Biblical Hebrew Accusative Data*. Zenodo.
+https://doi.org/10.5281/zenodo.22903206.
+
+This DOI always resolves to the latest version. Each release also has its own
+version-specific DOI, listed on the Zenodo record. See also
+[`CITATION.cff`](CITATION.cff), or use "Cite this repository" on GitHub.
 
 ## License
 

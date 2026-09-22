@@ -15,6 +15,7 @@ authors:
 version: "1.0.0"
 date-released: "2026-09-22"
 license: CC-BY-4.0
+doi: 10.5281/zenodo.22903206
 repository-code: "https://github.com/jejboulet/bh-accusative-data"
 url: "https://jejboulet.github.io/bh-accusative-data/"
 keywords:
