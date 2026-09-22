@@ -51,6 +51,10 @@ header h1 {
   font-size: 0.95rem;
 }
 
+.cite-line {
+  margin-top: 0.4rem;
+}
+
 main {
   padding: 1rem 2rem 2rem;
 }
