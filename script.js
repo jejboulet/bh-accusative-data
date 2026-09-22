@@ -22,7 +22,6 @@ const ALL_COLUMNS = [
   { key: "word_order", label: "Word Order" },
   { key: "determination", label: "Determination" },
   { key: "cognate", label: "Cognate" },
-  { key: "conjuncts_num", label: "Conjuncts #" },
   { key: "notes", label: "Notes" },
 ];
 
@@ -105,7 +104,6 @@ const DETAIL_SECTIONS = [
       ["word_order", "Word order"],
       ["determination", "Determination"],
       ["cognate", "Cognate"],
-      ["conjuncts_num", "Conjuncts #"],
     ],
   },
   {
