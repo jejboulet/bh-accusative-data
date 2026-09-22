@@ -2,7 +2,7 @@ const ALL_COLUMNS = [
   { key: "book", label: "Book" },
   { key: "verse", label: "Verse" },
   { key: "clhebrew", label: "Clause (Hebrew)", heb: true },
-  { key: "SBL_cltransliteration", label: "Clause (Transliteration)" },
+  { key: "cltransliteration", label: "Clause (Transliteration)" },
   { key: "clgloss", label: "Clause (Gloss)" },
   { key: "cltranslation", label: "Clause (Translation)" },
   { key: "vinflected", label: "Verb (Inflected)", heb: true },
@@ -11,7 +11,7 @@ const ALL_COLUMNS = [
   { key: "vconjugation", label: "Conjugation" },
   { key: "vtype", label: "Verb Type" },
   { key: "xphebrew", label: "Phrase", heb: true },
-  { key: "SBL_xptransliteration", label: "Phrase (Transliteration)" },
+  { key: "xptransliteration", label: "Phrase (Transliteration)" },
   { key: "xpgloss", label: "Gloss" },
   { key: "xpcategory", label: "Cat." },
   { key: "type", label: "Type" },
@@ -39,8 +39,8 @@ const FILTER_FIELDS = [
 ];
 
 const SEARCH_FIELDS = [
-  "clhebrew", "SBL_cltransliteration", "clgloss", "cltranslation",
-  "xphebrew", "SBL_xptransliteration", "xpgloss",
+  "clhebrew", "cltransliteration", "clgloss", "cltranslation",
+  "xphebrew", "xptransliteration", "xpgloss",
   "vinflected", "vroot", "notes", "verse",
 ];
 
@@ -70,7 +70,7 @@ function buildSearchKeys(rows) {
 const DETAIL_SECTIONS = [
   {
     title: "Clause",
-    triplet: { section: "clause", heb: "clhebrew", translit: "SBL_cltransliteration", gloss: "clgloss" },
+    triplet: { section: "clause", heb: "clhebrew", translit: "cltransliteration", gloss: "clgloss" },
     fields: [
       ["verse", "Verse"],
       ["cltranslation", "Translation"],
@@ -88,7 +88,7 @@ const DETAIL_SECTIONS = [
   },
   {
     title: "Phrase",
-    triplet: { section: "phrase", heb: "xphebrew", translit: "SBL_xptransliteration", gloss: "xpgloss" },
+    triplet: { section: "phrase", heb: "xphebrew", translit: "xptransliteration", gloss: "xpgloss" },
     fields: [
       ["xpcategory", "Category"],
     ],
