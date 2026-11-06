@@ -199,6 +199,10 @@ async function init() {
   // masked by a stale copy. An unchanged file still costs only a 304.
   const res = await fetch("data.json", { cache: "no-cache" });
   DATA = await res.json();
+  // data.json is written in canonical order (Hebrew Bible book order, then
+  // chapter, verse and entry tag); remember each row's place so the Book and
+  // Verse columns can sort back to it.
+  DATA.forEach((row, i) => { row._order = i; });
   markVerseSuffixes(DATA);
   buildSearchKeys(DATA);
   await loadOverrides();
@@ -222,7 +226,8 @@ function buildFilters() {
   const container = document.getElementById("filters");
   FILTER_FIELDS.forEach((field) => {
     const values = [...new Set(DATA.map((r) => r[field]).filter((v) => v !== null && v !== undefined && v !== ""))];
-    values.sort((a, b) => String(a).localeCompare(String(b)));
+    if (field === "book") values.sort((a, b) => bookCode(a) - bookCode(b));
+    else values.sort((a, b) => String(a).localeCompare(String(b)));
     if (values.length === 0) return;
     const select = document.createElement("select");
     select.dataset.field = field;
@@ -244,6 +249,15 @@ function buildFilters() {
     container.appendChild(select);
   });
 }
+
+// Book name -> book_code, for listing books in canonical order.
+function bookCode(name) {
+  const row = DATA.find((r) => r.book === name);
+  return row ? row.book_code : Infinity;
+}
+
+// Columns whose natural order is the canonical one, not the text of the cell.
+const CANONICAL_SORT = new Set(["book", "verse"]);
 
 function fieldLabel(field) {
   const found = ALL_COLUMNS.find((c) => c.key === field);
@@ -368,6 +382,7 @@ function applyFilters() {
 function renderTable() {
   if (sortKey) {
     filtered.sort((a, b) => {
+      if (CANONICAL_SORT.has(sortKey)) return (a._order - b._order) * sortDir;
       const av = a[sortKey] ?? "";
       const bv = b[sortKey] ?? "";
       return String(av).localeCompare(String(bv), undefined, { numeric: true }) * sortDir;
